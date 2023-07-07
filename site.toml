@@ -8,3 +8,54 @@ name = "site"
 
 # This page should be the root of your website. It's important.
 page = "https://stoicnyc.notion.site/PEXAVC-379caa6586644555995315a171386774?pvs=4"
+
+theme = "dark"
+
+[site]
+  [[site.meta]]
+  name = "viewport"
+  content = "width=device-width,height=device-height, initial-scale=1, shrink-to-fit=yes"
+
+  [[site.meta]]
+  name = "apple-mobile-web-app-status-bar-style"
+  content = "black-translucent"
+
+  [[site.meta]]
+  name = "keywords"
+  content = "metal, swiftui, swift, mobile, development, audio, visual, open-source, blog, writing, software, creative, creator, tools, guides, tutorials, android, java, c++, cv, computer-vision, ml, coreml, engineering, development, mixed, reality, AR, VR, music, producer, granite, neatia, stoic, marblekit, bullish"
+
+  [[site.meta]]
+  name = "description"
+  content = "EXperimenting with Patterns, Audio, and Video."
+
+  [[site.meta]]
+  property = "og:description"
+  content = "Pretty EXperimental Audio Visual Collective"
+  [[site.meta]]
+  property = "og:title"
+  content = "PEXAVC"
+  [[site.meta]]
+  property = "og:image"
+  content = "https://stoicnyc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1c03e929-1f79-4daf-9610-71a6f3543e37%2F1500x500.jpg?table=block&id=379caa65-8664-4555-9953-15a171386774&spaceId=17d5523b-2768-454a-a614-3e8b3ad01079&width=2000&userId=&cache=v2"
+  [[site.meta]]
+  property = "og:url"
+  content = "https://pexavc.com"
+
+  [[site.meta]]
+  name = "twitter:card"
+  content = "summary_large_image"
+  [[site.meta]]
+  name = "twitter:creator"
+  content = "@pexavc"
+  [[site.meta]]
+  name = "twitter:title"
+  content = "PEXAVC"
+  [[site.meta]]
+  name = "twitter:image"
+  content = "https://stoicnyc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1c03e929-1f79-4daf-9610-71a6f3543e37%2F1500x500.jpg?table=block&id=379caa65-8664-4555-9953-15a171386774&spaceId=17d5523b-2768-454a-a614-3e8b3ad01079&width=2000&userId=&cache=v2"
+  [[site.meta]]
+  name = "twitter:site"
+  content = "https://pexavc.com"
+  [[site.meta]]
+  name = "twitter:description"
+  content = "EXperimenting with Patterns, Audio, and Video."
