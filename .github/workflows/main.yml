@@ -38,6 +38,7 @@ jobs:
              touch CNAME
              echo "pexavc.com" > CNAME
              sudo mv CNAME dist/site
+        working-directory: pages_repo
       - name: Push to GitHub pages
         run: |
           git config --global user.name "github-actions[bot]"
