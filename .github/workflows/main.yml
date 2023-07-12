@@ -3,7 +3,7 @@ name: Publish Notion website to GitHub Pages
 on:
   # Manual update only.
   workflow_dispatch:
-  
+
 permissions:
   contents: write
 
@@ -25,7 +25,7 @@ jobs:
       - name: Build Loconotion docker image
         run: docker-compose build loconotion
         working-directory: loconotion
-        
+
       - name: Run Loconotion
         run: |
           docker run \
@@ -33,11 +33,16 @@ jobs:
           -v "$GITHUB_WORKSPACE/pages_repo/site.toml:/app/loconotion/site.toml" \
           loconotion "site.toml"
         working-directory: loconotion
+      - name: Create CNAME
+        run: |
+             touch CNAME
+             echo "pexavc.com" > ~/CNAME
+             cp ~/CNAME dist/site
       - name: Push to GitHub pages
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
+
           GIT_DEPLOY_DIR=dist/site \
           GIT_DEPLOY_BRANCH=gh-pages \
           GIT_DEPLOY_REPO="https://${{ github.token }}@github.com/${{ github.repository }}.git" ./deploy.sh
