@@ -58,7 +58,7 @@ svg.alias {
   > div:nth-child(2):not(.notion-page-content)
   > div:not([data-block-id])
   div:not(.notion-page-details-controls) {
-  height: auto !important;
+  /*height: auto !important;*/
 }
 
 /* fixes possible stray header on tables */
