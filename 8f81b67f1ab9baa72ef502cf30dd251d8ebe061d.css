@@ -690,7 +690,7 @@ html.notion-front-page .notion-app-inner {
     pointer-events: none
     }
 /* ==================================================================== */
-/* Sidebar loading skeleton shimmer
+/* Loading shimmers
 /* ==================================================================== */
 .notion-shimmer {
     overflow: hidden;
