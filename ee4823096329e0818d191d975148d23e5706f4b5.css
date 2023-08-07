@@ -951,7 +951,9 @@ input[type="number"].input-hide-arrows {
 .layout-nested-grid {
     grid-column: full;
     display: grid;
-    grid-template-columns: inherit
+    grid-template-columns: inherit;
+    /* Align items at the start of the grid */
+    align-items: self-start
     }
 /**
  * A utility class which can make a layout component (usually a full-width one)
